@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Damini Pawar Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(10,10,10,0.8);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+nav h2 {
+    color: #4f46e5;
+}
+
+nav a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #4f46e5;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    animation: fadeIn 2s;
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 50%;
+    border: 4px solid #4f46e5;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+}
+
+.hero-text span {
+    color: #4f46e5;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* SECTION */
+section {
+    padding: 60px;
+    animation: fadeUp 1.5s;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4f46e5;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+/* SKILLS */
+.skill {
+    margin: 10px 0;
+}
+
+.bar {
+    height: 8px;
+    background: #222;
+    border-radius: 5px;
+}
+
+.fill {
+    height: 8px;
+    background: #4f46e5;
+    border-radius: 5px;
+}
+
+/* CERTIFICATE IMAGE */
+.cert-img {
+    width: 10%;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h2>Damini</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#internship">Internship</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Hello, I'm <span>Damini Pawar</span></h1>
+        <p>MCA Student | Data Analytics | Full Stack Developer</p>
+        <a href="./daminipawar resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+    <img src="pic.jpeg">
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Career Objective</h2>
+    <div class="card">
+        A motivated MCA student with strong interest in Data Analytics and SQL database management.
+        Seeking opportunity to apply analytical and technical skills in real-world projects.
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+        <div class="skill">C++
+            <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill">Python
+            <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill">SQL
+            <div class="bar"><div class="fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill">Power BI
+            <div class="bar"><div class="fill" style="width:70%"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section id="internship">
+    <h2>Internship</h2>
+    <div class="card">
+        <b>Deep Learning & Full Stack Developer Intern</b><br><br>
+        - Working on real-time projects<br>
+        - Learning frontend & backend integration<br>
+        - Exploring deep learning concepts
+    </div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects">
+    <h2>Project</h2>
+    <div class="card">
+        <b>Smart Home Care</b><br>
+        FastAPI + React.js + MySQL<br>
+        Includes authentication, booking & payment integration.
+    </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+    <h2>Certificates</h2>
+
+    <div class="card">
+        <h3>C++ Training Certification</h3>
+        <p><strong>Organization:</strong> IIT Bombay (Spoken Tutorial) & EduPyramids</p>
+        <p><strong>Institute:</strong> MET Bhujbal Knowledge City</p>
+        <p><strong>Score:</strong> 85%</p>
+        <p><strong>Date:</strong> 27 December 2025</p>
+
+        <p>
+            Successfully completed C++ training and passed the online exam conducted by IIT Bombay.
+        </p>
+
+        <img src="./certificate.jpeg" class="cert-img">
+
+        <br>
+        <a class="btn" href="./certificate.jpeg" target="_blank">View Certificate</a>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        📞 9604341453 <br>
+        📧 damini.mpawar@gmail.com <br><br>
+        <a class="btn" href="https://github.com/damini-pawar">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/damini-pawar-5a6586319">LinkedIn</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Damini Pawar
+</footer>
+
+</body>
+</html>
